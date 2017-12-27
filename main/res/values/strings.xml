@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Know Your Government</string>
+    <string name="Info">Info</string>
+    <string name="Search">Search</string>
+    <string name="title">Know Your Government</string>
+    <string name="copyright">Copyright 2017, Simon Chiu</string>
+    <string name="version">Version 1.0</string>
+    <string name="enter">Enter Here....</string>
+    <string name="enter_value">Enter a City, State, or a Zip Code:</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_result">No results found.</string>
+    <string name="address">Address:</string>
+    <string name="phone">Phone:</string>
+    <string name="email">Email:</string>
+    <string name="website">Website:</string>
+    <string name="no_data">No Data Provided.</string>
+    <string name="no_net">No network Connection.</string>
+    <string name="no_net2">Data cannot be accessed/loaded without an internet connection.</string>
+
+</resources>

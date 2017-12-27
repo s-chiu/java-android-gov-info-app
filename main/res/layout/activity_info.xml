@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.simon.knowyourgovernment.InfoActivity"
+    android:background="@drawable/about">
+
+    <TextView
+        android:text="@string/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/Title"
+        android:layout_marginStart="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:text="@string/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/copyright_name"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:text="@string/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/version_no"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/copyright_name"
+        android:layout_marginStart="104dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="104dp" />
+</android.support.constraint.ConstraintLayout>

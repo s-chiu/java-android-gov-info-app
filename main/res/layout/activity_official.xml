@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View android:id="@+id/rectangle_at_the_top"
+        android:layout_alignParentTop="true"
+        android:background="#DDDDDD"
+        android:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/office"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/location"
+        app:layout_constraintLeft_toLeftOf="@+id/rectangle_at_the_top"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:text="name"
+        android:id="@+id/name"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="112dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/office" />
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:onClick="photoActivity"
+        android:layout_height="139dp"
+        app:srcCompat="@drawable/missingimage"
+        android:id="@+id/picture"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_l"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="@+id/party"
+        android:layout_marginTop="76dp"
+        app:layout_constraintTop_toBottomOf="@+id/office"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="77dp"
+        app:layout_constraintLeft_toLeftOf="@+id/party"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:text="Office"
+        android:layout_width="160dp"
+        android:id="@+id/office"
+        android:layout_height="30dp"
+        android:layout_marginStart="112dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/location" />
+
+    <TextView
+        android:text="party"
+        android:layout_width="150dp"
+        android:id="@+id/party"
+        android:layout_height="30dp"
+        android:layout_marginStart="112dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:text="@string/address"
+        android:layout_height="30dp"
+        android:id="@+id/address_l"
+        android:layout_width="0dp"
+        app:layout_constraintRight_toLeftOf="@+id/picture"
+        app:layout_constraintBaseline_toBaselineOf="@+id/address"
+        android:layout_marginStart="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="18dp"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="2dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginRight="2dp" />
+
+    <TextView
+        android:text="@string/phone"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/phone_l"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/email_l"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintRight_toRightOf="@+id/address_l"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="2dp" />
+
+    <TextView
+        android:text="@string/email"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/email_l"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/website_l"
+        app:layout_constraintRight_toRightOf="@+id/phone_l"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/phone_l" />
+
+    <TextView
+        android:text="@string/website"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/website_l"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/youtube"
+        app:layout_constraintRight_toRightOf="@+id/email_l"
+        android:layout_marginTop="34dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintLeft_toLeftOf="@+id/email_l"
+        app:layout_constraintTop_toTopOf="@+id/email" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:onClick="youtubeClicked"
+        app:srcCompat="@drawable/youtube"
+        android:id="@+id/youtube"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintRight_toLeftOf="@+id/google"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        app:layout_constraintHorizontal_bias="0.37"
+        android:scaleType="fitXY" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:onClick="googleClicked"
+        app:srcCompat="@drawable/googleplus"
+        android:id="@+id/google"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="102dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="102dp"
+        app:layout_constraintRight_toRightOf="@+id/twitter"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/website_l"
+        app:layout_constraintTop_toTopOf="@+id/youtube"
+        android:layout_marginLeft="102dp"
+        android:layout_marginRight="102dp"
+        android:scaleType="fitXY" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:onClick="twitterClicked"
+        app:srcCompat="@drawable/twitter"
+        android:id="@+id/twitter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/facebook"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:scaleType="fitXY" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:onClick="facebookClicked"
+        app:srcCompat="@drawable/facebook"
+        android:id="@+id/facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:text="address"
+        android:layout_height="30dp"
+        android:id="@+id/address"
+        android:layout_width="200dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/phone"
+        app:layout_constraintRight_toRightOf="@+id/picture"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/picture" />
+
+    <TextView
+        android:text="phone"
+        android:layout_height="30dp"
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintRight_toRightOf="@+id/address"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/address" />
+
+    <TextView
+        android:text="email"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/email"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/website"
+        app:layout_constraintRight_toRightOf="@+id/phone"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/phone" />
+
+    <TextView
+        android:text="website"
+        android:layout_width="0dp"
+        android:id="@+id/website"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/email"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="77dp"
+        app:layout_constraintLeft_toLeftOf="@+id/email"
+        android:layout_height="40dp" />
+
+</android.support.constraint.ConstraintLayout>
